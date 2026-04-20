@@ -1,0 +1,25 @@
+{
+  "ma": "MWG",
+  "ten_cong_ty": "CTCP Đầu tư Thế Giới Di Động",
+  "san": "HOSE",
+  "nganh": "Bán lẻ điện máy / điện thoại",
+  "theo_doi_tu": null,
+  "tong_phien": 0,
+  "vi_the_hien_tai": {
+    "dang_giu": false,
+    "gia_mua": null,
+    "ngay_mua": null,
+    "so_luong": null,
+    "chien_luoc": null
+  },
+  "thong_ke": {
+    "tong_lenh": 0,
+    "thang": 0,
+    "thua": 0,
+    "cho": 0,
+    "win_rate_pct": null,
+    "tong_lai_lo_pct": null
+  },
+  "lich_su": [],
+  "ghi_chu_chung": []
+}
