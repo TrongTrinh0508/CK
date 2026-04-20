@@ -166,3 +166,43 @@ KỊCH BẢN 3 — TIÊU CỰC (xác suất: x%):
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 T+: [MUA/KHÔNG] | Vào: xxx | SL: xxx | TP: xxx | Lệnh mua: xx | Lệnh bán: xx | Tin cậy: x%
 Trung hạn: [MUA/KHÔNG] | Vào: xxx | SL: xxx | TP1: xxx | TP2: xxx | Giữ: x tuần | Tin cậy: x%
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💾 BƯỚC CUỐI — GHI LỊCH SỬ (LUÔN LÀM SAU KHI PHÂN TÍCH XONG)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Sau khi hoàn thành phân tích A→H, thực hiện 3 thao tác ghi file sau:
+
+### 1. Tạo file history ngày hôm nay
+Tạo file mới: stocks/[MÃ]/history/[YYYY-MM-DD].md
+Dùng template từ: stocks/_template/history/YYYY-MM-DD.md
+Điền đầy đủ toàn bộ kết quả phân tích từ mục A đến H vào file này.
+Phần "BỐI CẢNH TỪ PHIÊN TRƯỚC" điền từ dữ liệu đã đọc ở Bước 0.
+Phần "KẾT QUẢ THỰC TẾ" để trống — người dùng điền sau khi lệnh kết thúc.
+
+### 2. Cập nhật summary.json
+Mở file stocks/[MÃ]/summary.json và:
+- Tăng tong_phien lên 1
+- Nếu theo_doi_tu là null: điền ngày hôm nay
+- Thêm 1 object mới vào đầu mảng lich_su[] với toàn bộ dữ liệu số từ phân tích hôm nay:
+   - Điền tất cả trường số: gia_close, volume, ma9, ma26, stoch_rsi, bbw, nn_rong, nn_room_pct, ho_tro_1/2, khang_cu_1/2
+   - Điền các trường text: macd_trend, xu_huong_ngan_han, xu_huong_trung_han, tin_hieu_tong_hop
+   - Điền chien_luoc_t_plus và chien_luoc_trung_han với giá vào/SL/TP/tin_cay
+   - ket_qua: để null — người dùng điền sau
+- Cập nhật vi_the_hien_tai nếu người dùng thông báo đã vào lệnh
+- Tự động tính lại thong_ke.win_rate_pct nếu đủ dữ liệu ket_qua (đếm TP_DAT / tổng lệnh đã có kết quả)
+
+### 3. Cập nhật index.md
+Mở file stocks/[MÃ]/index.md và cập nhật:
+- "Cập nhật lần cuối": ngày hôm nay
+- "Tổng số phiên đã theo dõi": số mới
+- Bảng "TRẠNG THÁI KỸ THUẬT GẦN NHẤT": thay bằng dữ liệu hôm nay
+- Bảng "VÙNG GIÁ QUAN TRỌNG": cập nhật hỗ trợ/kháng cự mới
+- Bảng "LỊCH SỬ TÓM TẮT": thêm dòng hôm nay vào đầu, giữ tối đa 5 dòng gần nhất
+- Nếu thesis thay đổi: cập nhật mục THESIS ĐẦU TƯ HIỆN TẠI
+
+Sau khi ghi xong, thông báo:
+> ✅ Đã lưu phân tích vào stocks/[MÃ]/history/[YYYY-MM-DD].md
+> ✅ Đã cập nhật stocks/[MÃ]/summary.json (tổng X phiên)
+> ✅ Đã cập nhật stocks/[MÃ]/index.md
+> 📌 Nhắc nhở: Sau khi lệnh kết thúc, hãy điền kết quả vào mục H (KẾT QUẢ THỰC TẾ) trong file history để tính win rate.

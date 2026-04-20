@@ -1,0 +1,87 @@
+{
+  "ma": "PC1",
+  "ten_cong_ty": "Công ty Cổ phần Tập đoàn PC1",
+  "san": "HOSE",
+  "nganh": "Xây lắp điện / Năng lượng / Bất động sản khu công nghiệp",
+  "theo_doi_tu": "2026-04-20",
+  "tong_phien": 1,
+  "vi_the_hien_tai": {
+    "dang_giu": false,
+    "gia_mua": null,
+    "ngay_mua": null,
+    "so_luong": null,
+    "chien_luoc": null
+  },
+  "thong_ke": {
+    "tong_lenh": 1,
+    "thang": 0,
+    "thua": 0,
+    "cho": 1,
+    "win_rate_pct": null,
+    "tong_lai_lo_pct": null
+  },
+  "lich_su": [
+    {
+      "ngay": "2026-04-20",
+      "gia_open": 26.7,
+      "gia_high": 27.05,
+      "gia_low": 26.5,
+      "gia_close": 26.6,
+      "thay_doi_pct": -0.19,
+      "volume": 2877100,
+      "volume_so_tb": 0.72,
+      "ma9": 27.11,
+      "ma26": null,
+      "ichimoku_cloud": "duoi",
+      "macd_trend": "bearish",
+      "macd_histogram": "thu_hep",
+      "stoch_rsi": 32.98,
+      "stoch_rsi_vung": "trung_tinh",
+      "bbw": 0.14,
+      "bbw_trang_thai": "co_lai",
+      "momentum": "duong",
+      "nn_mua": 0,
+      "nn_ban": 0,
+      "nn_rong": 0,
+      "nn_room_pct": null,
+      "nn_xu_huong_10p": "mua_rong",
+      "ho_tro_1": 26.2,
+      "ho_tro_2": 25.4,
+      "khang_cu_1": 27.1,
+      "khang_cu_2": 27.8,
+      "xu_huong_ngan_han": "sideway",
+      "xu_huong_trung_han": "sideway",
+      "tin_hieu_ky_thuat": "TRUNG_LAP",
+      "tin_hieu_co_ban": "TRUNG_LAP",
+      "tin_hieu_tong_hop": "TRUNG_LAP",
+      "chien_luoc_t_plus": {
+        "quyet_dinh": "CHO",
+        "vung_vao_tu": 26.2,
+        "vung_vao_den": 26.4,
+        "sl": 24.95,
+        "tp": 27.2,
+        "tin_cay_pct": 52
+      },
+      "chien_luoc_trung_han": {
+        "quyet_dinh": "MUA",
+        "vung_vao_tu": 26.3,
+        "vung_vao_den": 26.7,
+        "sl": 25.0,
+        "tp1": 28.0,
+        "tp2": 29.2,
+        "thoi_gian_giu_tuan": 6,
+        "tin_cay_pct": 64
+      },
+      "xac_suat_tich_cuc_pct": 35,
+      "xac_suat_sideway_pct": 40,
+      "xac_suat_tieu_cuc_pct": 25,
+      "co_link_tin": true,
+      "ghi_chu": "Phiên đầu theo dõi PC1; giá dưới MA9 và dưới mây Ichimoku, BBW co hẹp, NN 10 phiên vẫn dương nhưng hôm nay trung tính.",
+      "ket_qua": null
+    }
+  ],
+  "ghi_chu_chung": [
+    "Dữ liệu lấy từ ảnh chart SSI iBoard phiên 20/04/2026 và link thị trường Vietstock.",
+    "Chưa có dữ liệu MA26/Room NN theo % trong ảnh nên để null."
+  ]
+}

@@ -3,8 +3,8 @@
   "ten_cong_ty": "CTCP Đầu tư Thế Giới Di Động",
   "san": "HOSE",
   "nganh": "Bán lẻ điện máy / điện thoại",
-  "theo_doi_tu": null,
-  "tong_phien": 0,
+  "theo_doi_tu": "2026-04-20",
+  "tong_phien": 1,
   "vi_the_hien_tai": {
     "dang_giu": false,
     "gia_mua": null,
@@ -13,13 +13,75 @@
     "chien_luoc": null
   },
   "thong_ke": {
-    "tong_lenh": 0,
+    "tong_lenh": 1,
     "thang": 0,
     "thua": 0,
-    "cho": 0,
+    "cho": 1,
     "win_rate_pct": null,
     "tong_lai_lo_pct": null
   },
-  "lich_su": [],
-  "ghi_chu_chung": []
+  "lich_su": [
+    {
+      "ngay": "2026-04-20",
+      "gia_open": 87.5,
+      "gia_high": 88.5,
+      "gia_low": 86.4,
+      "gia_close": 87.3,
+      "thay_doi_pct": 0.46,
+      "volume": 10168300,
+      "volume_so_tb": 1.53,
+      "ma9": 82.5,
+      "ma26": null,
+      "ichimoku_cloud": "tren",
+      "macd_trend": "bullish",
+      "macd_histogram": "mo_rong",
+      "stoch_rsi": 97.17,
+      "stoch_rsi_vung": "qua_mua",
+      "bbw": 0.13,
+      "bbw_trang_thai": "co_lai",
+      "momentum": "duong",
+      "nn_mua": 0,
+      "nn_ban": 0,
+      "nn_rong": 0,
+      "nn_room_pct": null,
+      "nn_xu_huong_10p": "mua_rong_chung_lai",
+      "ho_tro_1": 86.4,
+      "ho_tro_2": 84.3,
+      "khang_cu_1": 88.5,
+      "khang_cu_2": 90.0,
+      "xu_huong_ngan_han": "tang",
+      "xu_huong_trung_han": "sideway_tang",
+      "tin_hieu_ky_thuat": "MUA",
+      "tin_hieu_co_ban": "TRUNG_LAP",
+      "tin_hieu_tong_hop": "MUA",
+      "chien_luoc_t_plus": {
+        "quyet_dinh": "CHO",
+        "vung_vao_tu": 86.8,
+        "vung_vao_den": 87.3,
+        "sl": 82.9,
+        "tp": 91.8,
+        "tin_cay_pct": 58
+      },
+      "chien_luoc_trung_han": {
+        "quyet_dinh": "MUA",
+        "vung_vao_tu": 86.5,
+        "vung_vao_den": 87.5,
+        "sl": 82.2,
+        "tp1": 91.8,
+        "tp2": 95.5,
+        "thoi_gian_giu_tuan": 4,
+        "tin_cay_pct": 68
+      },
+      "xac_suat_tich_cuc_pct": 40,
+      "xac_suat_sideway_pct": 35,
+      "xac_suat_tieu_cuc_pct": 25,
+      "co_link_tin": false,
+      "ghi_chu": "Phiên đầu theo dõi MWG; giá nằm trên MA9 và trên mây Ichimoku, MACD bullish nhưng Stoch RSI vào vùng quá mua và giá đang gặp cản ngắn hạn 88.5-90.",
+      "ket_qua": null
+    }
+  ],
+  "ghi_chu_chung": [
+    "Dữ liệu lấy từ ảnh SSI iBoard phiên 20/04/2026.",
+    "Một số trường không đọc trực tiếp được từ ảnh (MA26, Room NN theo %) để null."
+  ]
 }
