@@ -1,0 +1,89 @@
+{
+  "ma": "VCB",
+  "ten_cong_ty": "Ngân hàng Thương mại Cổ phần Ngoại Thương Việt Nam",
+  "san": "HOSE",
+  "nganh": "Ngân hàng",
+  "theo_doi_tu": "2026-04-21",
+  "tong_phien": 1,
+  "vi_the_hien_tai": {
+    "dang_giu": false,
+    "gia_mua": null,
+    "ngay_mua": null,
+    "so_luong": null,
+    "chien_luoc": null
+  },
+  "thong_ke": {
+    "tong_lenh": 1,
+    "thang": 0,
+    "thua": 0,
+    "cho": 1,
+    "win_rate_pct": null,
+    "tong_lai_lo_pct": null
+  },
+  "lich_su": [
+    {
+      "ngay": "2026-04-21",
+      "gia_open": 59.60,
+      "gia_high": 60.50,
+      "gia_low": 59.50,
+      "gia_close": 60.10,
+      "thay_doi_pct": 1.01,
+      "volume": 6442900,
+      "volume_so_tb": 0.98,
+      "ma9": 59.64,
+      "ma26": null,
+      "ichimoku_cloud": "tren",
+      "macd_trend": "bullish",
+      "macd_histogram": "mo_rong",
+      "stoch_rsi": 83.78,
+      "stoch_rsi_vung": "qua_mua",
+      "bbw": 0.05,
+      "bbw_trang_thai": "co_lai",
+      "momentum": "duong",
+      "nn_mua": 1646300,
+      "nn_ban": 1324544,
+      "nn_rong": 321756,
+      "nn_room_pct": 17.2,
+      "nn_xu_huong_10p": "dao_chieu",
+      "ho_tro_1": 59.25,
+      "ho_tro_2": 58.00,
+      "khang_cu_1": 60.50,
+      "khang_cu_2": 62.50,
+      "xu_huong_ngan_han": "tang",
+      "xu_huong_trung_han": "sideway_tang",
+      "tin_hieu_ky_thuat": "MUA",
+      "tin_hieu_co_ban": "NA",
+      "tin_hieu_tong_hop": "MUA",
+      "chien_luoc_t_plus": {
+        "quyet_dinh": "MUA",
+        "vung_vao_tu": 59.20,
+        "vung_vao_den": 59.60,
+        "sl": 56.50,
+        "tp": 62.00,
+        "tin_cay_pct": 55
+      },
+      "chien_luoc_trung_han": {
+        "quyet_dinh": "MUA",
+        "vung_vao_tu": 59.00,
+        "vung_vao_den": 60.10,
+        "sl": 57.00,
+        "tp1": 63.00,
+        "tp2": 66.00,
+        "thoi_gian_giu_tuan": 3,
+        "tin_cay_pct": 62
+      },
+      "xac_suat_tich_cuc_pct": 35,
+      "xac_suat_sideway_pct": 45,
+      "xac_suat_tieu_cuc_pct": 20,
+      "co_link_tin": false,
+      "ghi_chu": "Phiên đầu theo dõi VCB. BBW squeeze cực mạnh (0.05), MACD vừa bullish crossover nhưng còn dưới 0. Stoch RSI quá mua 83.78 → rủi ro pullback ngắn hạn. NN đảo chiều mua ròng 3/4 phiên gần nhất (+321K CP hôm nay). Khuyến nghị trung hạn tốt hơn T+ do R:R (1:1.7 vs 1:1.0).",
+      "ket_qua": null
+    }
+  ],
+  "ghi_chu_chung": [
+    "Dữ liệu lấy từ ảnh SSI iBoard phiên 20/04/2026.",
+    "Room NN còn 817.36M CP (~17.2% vốn), rất rộng.",
+    "NN 10 phiên bán ròng -4.87M CP (-287 tỷ) nhưng đang đảo chiều mua ròng gần nhất.",
+    "win_rate_pct chưa tính do chưa có lệnh nào có kết quả thực tế."
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "ma": "CTD",
+  "ten_cong_ty": "Công ty Cổ phần Xây dựng COTECCONS",
+  "san": "HOSE",
+  "nganh": "Xây dựng",
+  "theo_doi_tu": "2026-04-21",
+  "tong_phien": 1,
+  "vi_the_hien_tai": {
+    "dang_giu": false,
+    "gia_mua": null,
+    "ngay_mua": null,
+    "so_luong": null,
+    "chien_luoc": null
+  },
+  "thong_ke": {
+    "tong_lenh": 1,
+    "thang": 0,
+    "thua": 0,
+    "cho": 1,
+    "win_rate_pct": null,
+    "tong_lai_lo_pct": null
+  },
+  "lich_su": [
+    {
+      "ngay": "2026-04-21",
+      "gia_open": 79.3,
+      "gia_high": 83.5,
+      "gia_low": 79.3,
+      "gia_close": 83.0,
+      "thay_doi_pct": 5.33,
+      "volume": 1544600,
+      "volume_so_tb": 2.4,
+      "ma9": 79.15,
+      "ma26": 79.15,
+      "ichimoku_cloud": "tren",
+      "macd_trend": "bullish",
+      "macd_histogram": "mo_rong",
+      "stoch_rsi": 70.83,
+      "stoch_rsi_vung": "trung_tinh",
+      "bbw": 0.1,
+      "bbw_trang_thai": "co_lai",
+      "momentum": "duong",
+      "nn_mua": 1300,
+      "nn_ban": 6200,
+      "nn_rong": -4900,
+      "nn_room_pct": 0.0,
+      "nn_xu_huong_10p": "dao_chieu",
+      "ho_tro_1": 80.2,
+      "ho_tro_2": 79.15,
+      "khang_cu_1": 83.5,
+      "khang_cu_2": 85.0,
+      "xu_huong_ngan_han": "tang",
+      "xu_huong_trung_han": "sideway_tang",
+      "tin_hieu_ky_thuat": "MUA",
+      "tin_hieu_co_ban": "NA",
+      "tin_hieu_tong_hop": "MUA",
+      "chien_luoc_t_plus": {
+        "quyet_dinh": "CHO",
+        "vung_vao_tu": 81.8,
+        "vung_vao_den": 82.4,
+        "sl": 78.3,
+        "tp": 86.5,
+        "tin_cay_pct": 57
+      },
+      "chien_luoc_trung_han": {
+        "quyet_dinh": "MUA",
+        "vung_vao_tu": 81.5,
+        "vung_vao_den": 82.8,
+        "sl": 78.6,
+        "tp1": 86.8,
+        "tp2": 90.0,
+        "thoi_gian_giu_tuan": 4,
+        "tin_cay_pct": 66
+      },
+      "xac_suat_tich_cuc_pct": 42,
+      "xac_suat_sideway_pct": 35,
+      "xac_suat_tieu_cuc_pct": 23,
+      "co_link_tin": false,
+      "ghi_chu": "Phiên đầu theo dõi CTD; giá breakout ngắn hạn với volume đột biến, tuy nhiên đang áp sát kháng cự 83.5-85 và NN bán ròng 2 phiên gần nhất.",
+      "ket_qua": null
+    }
+  ],
+  "ghi_chu_chung": [
+    "Dữ liệu lấy từ ảnh SSI iBoard phiên 20/04/2026.",
+    "NN room còn 20 CP, coi như gần cạn room.",
+    "win_rate_pct chưa tính do chưa có lệnh nào có kết quả thực tế."
+  ]
+}

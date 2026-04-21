@@ -1,7 +1,7 @@
 # PC1 — Tóm tắt trạng thái hiện tại
 
-> **Cập nhật lần cuối:** 2026-04-20
-> **Tổng số phiên đã theo dõi:** 1
+> **Cập nhật lần cuối:** 2026-04-21
+> **Tổng số phiên đã theo dõi:** 2
 > **Trạng thái vị thế:** KHÔNG GIỮ
 
 ---
@@ -16,39 +16,40 @@
 
 ## 📊 TRẠNG THÁI KỸ THUẬT GẦN NHẤT
 
-| Chỉ số             | Giá trị           | Nhận xét                                |
-| ------------------ | ----------------- | --------------------------------------- |
-| Giá đóng cửa       | 26.60             | -0.19%                                  |
-| Xu hướng ngắn hạn  | SIDEWAY           | Dao động biên 26.2-27.1                 |
-| Xu hướng trung hạn | SIDEWAY           | Chưa vượt lại cụm kháng cự 27.1-27.8    |
-| MA9 / MA26         | 27.11 / N/A       | Giá dưới MA9                            |
-| Ichimoku Cloud     | Dưới mây          | Tenkan < Kijun, chưa xác nhận đảo chiều |
-| MACD               | Bearish nhẹ       | Histogram thu hẹp                       |
-| Stoch RSI          | 32.98 / 38.41     | Trung tính nghiêng yếu                  |
-| BBW                | 0.14              | Co lại (squeeze)                        |
-| NN 10 phiên        | Mua ròng (lũy kế) | Tổng: +1,114,099 CP                     |
-| Volume             | 2.88 triệu CP     | Thấp hơn trung bình                     |
+| Chỉ số             | Giá trị           | Nhận xét                                        |
+| ------------------ | ----------------- | ----------------------------------------------- |
+| Giá tham chiếu     | 26.60             | Phiên 20/04: -0.19%                             |
+| Xu hướng ngắn hạn  | SIDEWAY yếu       | 5 phiên giảm liên tiếp, volume cạn dần          |
+| Xu hướng trung hạn | SIDEWAY           | Biên 25.40-27.80, BBW squeeze sắp breakout      |
+| MA9 / MA26         | 27.11 / N/A       | Giá dưới MA9 (~1.9%)                            |
+| Ichimoku Cloud     | Dưới mây          | Tenkan < Kijun (dead cross), mây đỏ dày         |
+| MACD               | Bearish nhẹ       | Histogram -0.09, thu hẹp dần                    |
+| Stoch RSI          | 32.98 / 38.41     | Trung tính thấp, chờ %K cắt lên %D              |
+| BBW                | 0.14              | Co hẹp (squeeze) — breakout tiềm năng           |
+| NN 10 phiên        | Mua ròng (lũy kế) | +1,206,599 CP (~32.84 tỷ), phân hóa 5 mua/5 bán |
+| Volume             | 2.88 triệu CP     | 0.61x TB — áp lực bán cạn kiệt                  |
 
 ---
 
 ## 🗺️ VÙNG GIÁ QUAN TRỌNG
 
-| Loại             | Giá   | Ghi chú                           |
-| ---------------- | ----- | --------------------------------- |
-| Kháng cự 2       | 27.80 | Cận trên vùng tích lũy gần nhất   |
-| Kháng cự 1       | 27.10 | MA9 và vùng đỉnh ngắn hạn         |
-| **Giá hiện tại** | 26.60 |                                   |
-| Hỗ trợ 1         | 26.20 | Vùng đỡ gần theo nền tích lũy     |
-| Hỗ trợ 2         | 25.40 | Đáy swing gần nhất                |
-| SL cứng          | 25.00 | Khoảng -5% từ vùng mua trung bình |
+| Loại             | Giá   | Ghi chú                            |
+| ---------------- | ----- | ---------------------------------- |
+| Kháng cự 2       | 27.80 | Kijun-sen + cận trên vùng tích lũy |
+| Kháng cự 1       | 27.10 | MA9 + Tenkan-sen Ichimoku          |
+| **Giá hiện tại** | 26.60 | Tham chiếu 21/04                   |
+| Hỗ trợ 1         | 26.20 | Đáy nến 3 phiên gần nhất           |
+| Hỗ trợ 2         | 25.40 | Đáy swing tháng 4 (07/04)          |
+| SL cứng          | 25.15 | -5% từ vùng mua trung bình 26.45   |
 
 ---
 
 ## 📅 LỊCH SỬ TÓM TẮT (5 phiên gần nhất)
 
-| Ngày       | Giá đóng | Tín hiệu  | Chiến lược      | Kết quả |
-| ---------- | -------- | --------- | --------------- | ------- |
-| 2026-04-20 | 26.60    | TRUNG_LẬP | Trung hạn (MUA) | Chờ     |
+| Ngày       | Giá đóng | Tín hiệu  | Chiến lược             | Kết quả |
+| ---------- | -------- | --------- | ---------------------- | ------- |
+| 2026-04-21 | (mở cửa) | TRUNG_LẬP | Trung hạn MUA chia đợt | Chờ     |
+| 2026-04-20 | 26.60    | TRUNG_LẬP | Trung hạn (MUA)        | Chờ     |
 
 ---
 
