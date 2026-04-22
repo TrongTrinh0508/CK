@@ -5,6 +5,12 @@ argument-hint: "Mã cổ phiếu (VD: MWG, FPT, VNM...)"
 
 Phân tích kỹ thuật ${input}.
 
+THỜI GIAN PHÂN TÍCH (BẮT BUỘC):
+
+- Ghi rõ: **HH:MM DD/MM/YYYY (UTC+7)** tại thời điểm người dùng hỏi.
+- Nếu người dùng không ghi thời gian, trợ lý phải tự lấy thời gian hệ thống hiện tại và nêu rõ trong phần mở đầu.
+- Tất cả khuyến nghị phải bám theo thời điểm hỏi (trước phiên / trong phiên / sau phiên), không dùng một kịch bản chung cho mọi thời điểm.
+
 HÌNH ẢNH ĐÍNH KÈM:
 
 - Hình 1: Biểu đồ nến NGÀY (Daily) gần nhất (3 tháng) — hiển thị MA, Ichimoku, Volume, BBW, Stoch RSI, MACD, Momentum + bảng giá/độ sâu thị trường bên phải (từ SSI iBoard)
@@ -19,6 +25,11 @@ QUY TẮC PHÂN TÍCH:
 - Phân tích thuần kỹ thuật, KHÔNG cần tin tức/cơ bản trừ khi tôi cung cấp
 - Đưa ra chiến lược cho CẢ HAI: T+2 hoặc T+3 VÀ trung hạn 2-4 tuần
 - SL cứng: 5% từ giá mua | TP: 5-10% từ giá mua
+- BẮT BUỘC thêm logic theo khung giờ hỏi:
+  - Nếu hỏi **trước 09:00**: đưa kế hoạch mở cửa (ATO/LO), vùng quan sát 15-30 phút đầu phiên.
+  - Nếu hỏi **09:00-11:30 hoặc 13:00-14:45**: ưu tiên lệnh thực chiến trong phiên, nêu trigger vào/ra theo giá và khối lượng realtime.
+  - Nếu hỏi **sau 14:45**: xây kế hoạch cho phiên kế tiếp (entry trigger, điều kiện hủy kịch bản, cách xử lý gap up/gap down).
+  - Nếu hỏi **sau 22:00**: ưu tiên kế hoạch cho ngày mai + mức giá đặt sẵn đầu phiên.
 
 TRẢ LỜI THEO CẤU TRÚC SAU:
 
@@ -26,6 +37,9 @@ TRẢ LỜI THEO CẤU TRÚC SAU:
 📊 A. ĐỌC DỮ LIỆU TỪ BIỂU ĐỒ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Liệt kê tất cả số liệu đọc được từ hình:
+
+- Thời điểm hỏi: HH:MM DD/MM/YYYY (UTC+7)
+- Trạng thái thị trường theo thời điểm hỏi: [Trước phiên / Trong phiên / Sau phiên]
 
 - Giá: O / H / L / C, % thay đổi, trần / sàn / tham chiếu
 - MA: MA9, các đường Ichimoku (Tenkan, Kijun, Senkou A, Senkou B)
@@ -174,26 +188,31 @@ Trung hạn: [MUA/KHÔNG] | Vào: xxx | SL: xxx | TP1: xxx | TP2: xxx | Giữ: x
 Sau khi hoàn thành phân tích A→H, thực hiện 3 thao tác ghi file sau:
 
 ### 1. Tạo file history ngày hôm nay
+
 Tạo file mới: stocks/[MÃ]/history/[YYYY-MM-DD].md
-Dùng template từ: stocks/_template/history/YYYY-MM-DD.md
+Dùng template từ: stocks/\_template/history/YYYY-MM-DD.md
 Điền đầy đủ toàn bộ kết quả phân tích từ mục A đến H vào file này.
 Phần "BỐI CẢNH TỪ PHIÊN TRƯỚC" điền từ dữ liệu đã đọc ở Bước 0.
 Phần "KẾT QUẢ THỰC TẾ" để trống — người dùng điền sau khi lệnh kết thúc.
 
 ### 2. Cập nhật summary.json
+
 Mở file stocks/[MÃ]/summary.json và:
+
 - Tăng tong_phien lên 1
 - Nếu theo_doi_tu là null: điền ngày hôm nay
 - Thêm 1 object mới vào đầu mảng lich_su[] với toàn bộ dữ liệu số từ phân tích hôm nay:
-   - Điền tất cả trường số: gia_close, volume, ma9, ma26, stoch_rsi, bbw, nn_rong, nn_room_pct, ho_tro_1/2, khang_cu_1/2
-   - Điền các trường text: macd_trend, xu_huong_ngan_han, xu_huong_trung_han, tin_hieu_tong_hop
-   - Điền chien_luoc_t_plus và chien_luoc_trung_han với giá vào/SL/TP/tin_cay
-   - ket_qua: để null — người dùng điền sau
+  - Điền tất cả trường số: gia_close, volume, ma9, ma26, stoch_rsi, bbw, nn_rong, nn_room_pct, ho_tro_1/2, khang_cu_1/2
+  - Điền các trường text: macd_trend, xu_huong_ngan_han, xu_huong_trung_han, tin_hieu_tong_hop
+  - Điền chien_luoc_t_plus và chien_luoc_trung_han với giá vào/SL/TP/tin_cay
+  - ket_qua: để null — người dùng điền sau
 - Cập nhật vi_the_hien_tai nếu người dùng thông báo đã vào lệnh
 - Tự động tính lại thong_ke.win_rate_pct nếu đủ dữ liệu ket_qua (đếm TP_DAT / tổng lệnh đã có kết quả)
 
 ### 3. Cập nhật index.md
+
 Mở file stocks/[MÃ]/index.md và cập nhật:
+
 - "Cập nhật lần cuối": ngày hôm nay
 - "Tổng số phiên đã theo dõi": số mới
 - Bảng "TRẠNG THÁI KỸ THUẬT GẦN NHẤT": thay bằng dữ liệu hôm nay
@@ -202,6 +221,7 @@ Mở file stocks/[MÃ]/index.md và cập nhật:
 - Nếu thesis thay đổi: cập nhật mục THESIS ĐẦU TƯ HIỆN TẠI
 
 Sau khi ghi xong, thông báo:
+
 > ✅ Đã lưu phân tích vào stocks/[MÃ]/history/[YYYY-MM-DD].md
 > ✅ Đã cập nhật stocks/[MÃ]/summary.json (tổng X phiên)
 > ✅ Đã cập nhật stocks/[MÃ]/index.md
