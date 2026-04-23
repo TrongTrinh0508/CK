@@ -17,6 +17,57 @@ HÌNH ẢNH ĐÍNH KÈM:
 - Hình 2: Biểu đồ nến NGÀY (Daily) zoom ra 6-12 tháng — cùng bộ indicator, full screen
 - Hình 3: NN mua ròng 10 phiên (từ SSI iBoard app) — bao gồm KL NN mua, KL NN bán, Room NN, biểu đồ cột NN mua ròng 10 phiên
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⏰ BƯỚC 0 — NHẬN BIẾT THỜI GIAN & ĐÁNH GIÁ VỊ THẾ CŨ (LUÔN LÀM ĐẦU TIÊN)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Trước khi phân tích, LUÔN thực hiện các bước sau:
+
+### 0a. Xác định ngày giờ hiện tại
+
+- Đọc ngày hiện tại từ context của cuộc hội thoại (trường "The current date is...")
+- Xác định trạng thái thị trường:
+  - Trước 9:00: Chưa mở cửa (dùng dữ liệu đóng cửa hôm trước)
+  - 9:00-11:30: Phiên sáng (dữ liệu đang cập nhật trong phiên)
+  - 11:30-13:00: Nghỉ trưa
+  - 13:00-14:30: Phiên chiều
+  - 14:30-14:45: Phiên ATC (giá có thể thay đổi đến 14:45)
+  - Sau 14:45: Đã đóng cửa (dữ liệu cuối ngày)
+  - Thứ 7, CN, ngày lễ: Thị trường đóng cửa
+
+### 0b. Kiểm tra vị thế đang giữ
+
+- Đọc file stocks/[MÃ]/summary.json → xem vi_the_hien_tai
+- Nếu dang_giu = true:
+  - Tính số ngày đã giữ: ngày hiện tại - ngay_mua
+  - Xác định ngày bán được theo chiến lược:
+    - T+2: ngay_mua + 2 ngày làm việc (bán được buổi sáng)
+    - T+2.5: ngay_mua + 2 ngày làm việc (bán được buổi chiều)
+    - T+3: ngay_mua + 3 ngày làm việc
+    - Trung hạn: không có deadline cứng
+  - So sánh ngày hiện tại với ngày bán được
+
+### 0c. Tự động đánh giá kết quả nếu đã đến hạn
+
+- Nếu ngày hiện tại >= ngày bán được VÀ thị trường đã đóng cửa (sau 14:45):
+  - Lấy giá đóng cửa hôm nay từ hình ảnh hoặc bảng giá
+  - Tính lãi/lỗ: (giá hiện tại - gia_mua) / gia_mua × 100%
+  - Xác định kịch bản nào đã xảy ra (so với 3 kịch bản trong file history gần nhất)
+  - Cập nhật mục H (KẾT QUẢ THỰC TẾ) trong file history ngày mua
+  - Cập nhật ket_qua trong summary.json
+  - Tính lại thong_ke (win_rate_pct, thang, thua)
+  - Thông báo:
+    > 📊 ĐÁNH GIÁ VỊ THẾ: [MÃ] mua [giá] ngày [ngày] → hiện tại [giá] | [LÃI/LỖ] x.xx%
+    > Kịch bản xảy ra: [tích cực/sideway/tiêu cực]
+
+- Nếu ngày hiện tại >= ngày bán được NHƯNG thị trường chưa đóng cửa:
+  - Thông báo trạng thái tạm thời và nhắc nhở sẽ đánh giá chính thức sau 14:45
+
+- Nếu chưa đến ngày bán được:
+  - Thông báo: "Vị thế [MÃ] còn x phiên nữa mới đến hạn T+. Giá hiện tại vs giá mua: +/-x%"
+
+---
+
 QUY TẮC PHÂN TÍCH:
 
 - Đọc toàn bộ chỉ báo từ hình: giá OHLC, MA, Ichimoku (Tenkan/Kijun/Cloud), Volume, BBW, Stoch RSI, MACD (line/signal/histogram), Momentum
@@ -25,11 +76,6 @@ QUY TẮC PHÂN TÍCH:
 - Phân tích thuần kỹ thuật, KHÔNG cần tin tức/cơ bản trừ khi tôi cung cấp
 - Đưa ra chiến lược cho CẢ HAI: T+2 hoặc T+3 VÀ trung hạn 2-4 tuần
 - SL cứng: 5% từ giá mua | TP: 5-10% từ giá mua
-- BẮT BUỘC thêm logic theo khung giờ hỏi:
-  - Nếu hỏi **trước 09:00**: đưa kế hoạch mở cửa (ATO/LO), vùng quan sát 15-30 phút đầu phiên.
-  - Nếu hỏi **09:00-11:30 hoặc 13:00-14:45**: ưu tiên lệnh thực chiến trong phiên, nêu trigger vào/ra theo giá và khối lượng realtime.
-  - Nếu hỏi **sau 14:45**: xây kế hoạch cho phiên kế tiếp (entry trigger, điều kiện hủy kịch bản, cách xử lý gap up/gap down).
-  - Nếu hỏi **sau 22:00**: ưu tiên kế hoạch cho ngày mai + mức giá đặt sẵn đầu phiên.
 
 TRẢ LỜI THEO CẤU TRÚC SAU:
 
