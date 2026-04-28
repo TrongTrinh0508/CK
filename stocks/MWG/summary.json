@@ -6,19 +6,19 @@
   "theo_doi_tu": "2026-04-20",
   "tong_phien": 6,
   "vi_the_hien_tai": {
-    "dang_giu": true,
-    "gia_mua": 86.2,
-    "ngay_mua": "2026-04-21",
-    "so_luong": 100,
-    "chien_luoc": "trung_han"
+    "dang_giu": false,
+    "gia_mua": null,
+    "ngay_mua": null,
+    "so_luong": 0,
+    "chien_luoc": null
   },
   "thong_ke": {
     "tong_lenh": 6,
     "thang": 0,
-    "thua": 0,
-    "cho": 6,
-    "win_rate_pct": null,
-    "tong_lai_lo_pct": null
+    "thua": 1,
+    "cho": 5,
+    "win_rate_pct": 0,
+    "tong_lai_lo_pct": -2.55
   },
   "lich_su": [
     {
@@ -77,7 +77,15 @@
       "xac_suat_tieu_cuc_pct": 30,
       "co_link_tin": false,
       "ghi_chu": "Trong phien sang 24/04: gia hoi ky thuat ve 84.9 nhung cung day 85.0-85.1 va NN van ban rong; uu tien thoat khi hoi.",
-      "ket_qua": null
+      "ket_qua": {
+        "hanh_dong": "BAN",
+        "gia_ban": 84.0,
+        "so_luong": 100,
+        "lai_lo_pct": -2.55,
+        "lai_lo_vnd": -220000,
+        "thoi_gian": "13:07:43 24/04/2026",
+        "ghi_chu": "Thoat toan bo vi the; gia khong hoi vung 85.0-85.2, ban LO 83.9 khop 84.0"
+      }
     },
     {
       "ngay": "2026-04-23",

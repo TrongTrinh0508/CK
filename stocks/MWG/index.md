@@ -1,16 +1,16 @@
 # MWG — Tóm tắt trạng thái hiện tại
 
-> **Cập nhật lần cuối:** 2026-04-24 (10:04, trong phiên)
+> **Cập nhật lần cuối:** 2026-04-24 (13:07, đã bán hết)
 > **Tổng số phiên đã theo dõi:** 6
-> **Trạng thái vị thế:** ĐANG GIỮ (100 CP, giá vốn 86.20) — ƯU TIÊN THOÁT KHI HỒI 85.0-85.2
+> **Trạng thái vị thế:** ĐÃ THOÁT (bán 100 CP @ 84.0, lỗ -2.55%)
 
 ---
 
 ## 🎯 THESIS ĐẦU TƯ HIỆN TẠI
 
-- **Luận điểm chính:** MWG đang hồi kỹ thuật trong phiên sáng sau nhịp giảm mạnh hôm qua, nhưng cấu trúc chưa đảo chiều vì cung vẫn dày ở 85.0-85.1 và NN vẫn bán ròng.
-- **Catalyst đang chờ:** Vượt 85.2 và giữ trên 85.0 ít nhất 15 phút với thanh khoản tăng.
-- **Điều kiện vô hiệu (Invalidation):** Thủng 84.30 trong phiên với bán chủ động tăng mạnh.
+- **Luận điểm chính:** Đã thoát vị thế MWG với lỗ -2.55%. Cấu trúc giá yếu, NN bán ròng liên tục, giá không hồi được vùng cản.
+- **Catalyst đang chờ:** Theo dõi cơ hội mua lại nếu giá về vùng 82.8-83.5 với tín hiệu đảo chiều.
+- **Điều kiện vô hiệu (Invalidation):** N/A (không còn vị thế).
 
 ---
 
@@ -18,7 +18,7 @@
 
 | Chỉ số             | Giá trị              | Nhận xét                                    |
 | ------------------ | -------------------- | ------------------------------------------- |
-| Giá hiện tại       | 84.90                | +0.47% trong phiên sáng                     |
+| Giá hiện tại       | 83.80                | -0.83% so tham chiếu (đang giao dịch)       |
 | Xu hướng ngắn hạn  | SIDEWAY GIẢM         | Hồi kỹ thuật, chưa vượt vùng cung 85.0-85.2 |
 | Xu hướng trung hạn | GIẢM NHẸ             | Chưa có xác nhận đảo chiều                  |
 | MA9 / MA26         | 84.72 / N/A          | Giá nhỉnh trên MA9 intraday                 |
@@ -48,7 +48,7 @@
 
 | Ngày       | Giá đóng | Tín hiệu                          | Chiến lược              | Kết quả |
 | ---------- | -------- | --------------------------------- | ----------------------- | ------- |
-| 2026-04-24 | 84.90\*  | TRUNG LẬP (trong phiên)           | Thoát khi hồi 85.0-85.2 | Chờ     |
+| 2026-04-24 | 83.80    | ĐÃ BÁN @ 84.0                     | Thoát vị thế, lỗ -2.55% | Thua    |
 | 2026-04-23 | 84.50    | BÁN                               | Thoát vị thế 24/04      | Chờ     |
 | 2026-04-22 | 86.40    | MUA THẬN TRỌNG                    | Đang giữ (theo plan)    | Chờ     |
 | 2026-04-21 | 85.60    | TRUNG LẬP (nghiêng giảm intraday) | Đang giữ (phòng thủ)    | Chờ     |
@@ -59,14 +59,12 @@
 ## 📝 GHI CHÚ QUAN TRỌNG
 
 - MWG: Thế Giới Di Động — Ngành bán lẻ điện máy/điện thoại.
-- Có vị thế thực tế: 100 CP tại 86.20; đang lỗ tạm ~-1.5% tại 10:04. Ưu tiên thoát khi hồi 85.0-85.2, cắt ngay nếu mất 84.3.
+- Đã đóng vị thế: bán 100 CP @ 84.0 ngày 24/04, lỗ -2.55% (-220,000 VND). Giá vốn 86.2, giữ 3 ngày.
 
 ---
 
 ## 🗓️ SỰ KIỆN SẮP TỚI
 
-| Sự kiện                          | Ngày dự kiến      | Tác động dự báo |
-| -------------------------------- | ----------------- | --------------- |
-| Canh thoát vị thế vùng 85.0-85.2 | Trong phiên 24/04 | CAO             |
-| Mốc phòng thủ 84.30              | Trong phiên 24/04 | CAO             |
-| Kịch bản mua mới vùng 82.8-83.5  | 1-2 tuần tới      | TRUNG BÌNH      |
+| Sự kiện                     | Ngày dự kiến | Tác động dự báo |
+| --------------------------- | ------------ | --------------- |
+| Canh mua lại vùng 82.8-83.5 | 1-2 tuần tới | TRUNG BÌNH      |
